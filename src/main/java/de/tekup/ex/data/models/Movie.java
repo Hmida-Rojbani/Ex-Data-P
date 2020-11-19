@@ -13,11 +13,15 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 
 @Entity
 @Table(name = "movies")
 @Data
+@Builder
+@AllArgsConstructor
 public class Movie {
 	
 	@Id
